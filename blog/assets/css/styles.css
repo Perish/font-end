@@ -1,0 +1,25 @@
+#header {
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+}
+
+#header > * {
+	flex: 2;
+	border: 1px solid red;
+}
+
+#header .title {
+	font-size: 30px;
+	flex: 16;
+}
+
+#header .actions {
+	flex: 4;
+}
+
+#header .title {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
