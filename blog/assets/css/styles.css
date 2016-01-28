@@ -1,25 +1,61 @@
 #header {
 	font-size: 16px;
 	display: flex;
-	align-items: center;
+	margin: 0;
+	padding: 10px 0;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 #header > * {
 	flex: 2;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
+}
+
+
+#header .operator {
+	display: flex;
+	text-align: center;
 }
 
 #header .title {
-	font-size: 30px;
+	font-size: 25px;
 	flex: 16;
+	display: flex;
+	align-items: center;
 }
 
 #header .actions {
-	flex: 4;
+	flex: 3;
+	text-align: center;
+	display: flex;
 }
 
-#header .title {
+#header a {
+	text-decoration: none;
+	color: maroon;
+	flex-basis: 100%;
+	display: flex;
+	align-items: center;
+	transition: all 0.5s;
+}
+
+#header a:hover {
+	color: rgba(128, 0, 0, 0.3);
+}
+
+
+#header i {
+	font-size: 26px;
+}
+
+#header .title{
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+
+
+#header span {
+	display: block;
+	width: 100%;
 }
