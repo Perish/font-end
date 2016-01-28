@@ -1,3 +1,5 @@
+/* header css */
+
 #header {
 	font-size: 16px;
 	display: flex;
@@ -58,4 +60,13 @@
 #header span {
 	display: block;
 	width: 100%;
+}
+
+
+/* login form */
+
+.small-container {
+	max-width: 48px;
+	margin: 0 auto;
+	border: 1px solid red;
 }
