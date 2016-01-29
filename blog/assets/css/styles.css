@@ -1,53 +1,44 @@
+body {
+	padding-top: 70px;
+}
 /* header css */
 
 #header {
 	font-size: 16px;
 	display: flex;
 	margin: 0;
-	padding: 10px 0;
+	padding: 10px;
 	border-bottom: 1px solid rgba(0,0,0,0.1);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
 }
-
-#header > * {
-	flex: 2;
-	/*border: 1px solid red;*/
-}
-
 
 #header .operator {
-	display: flex;
-	text-align: center;
+	padding: 6px;
 }
 
 #header .title {
-	font-size: 25px;
-	flex: 16;
-	display: flex;
-	align-items: center;
+	margin-left: 12px;
+	font-size: 24px;
 }
 
-#header .actions {
-	flex: 3;
-	text-align: center;
-	display: flex;
-}
-
-#header a {
-	text-decoration: none;
+a {
+	text-decoration: none important!;
 	color: maroon;
-	flex-basis: 100%;
-	display: flex;
-	align-items: center;
 	transition: all 0.5s;
 }
 
-#header a:hover {
+a:hover {
 	color: rgba(128, 0, 0, 0.3);
+	text-decoration: none;
 }
 
 
 #header i {
-	font-size: 20px;
+	font-size: 16px;
 }
 
 #header .title{
@@ -56,17 +47,76 @@
 	text-overflow: ellipsis;
 }
 
+.display {
+	display: none;
+}
 
-#header span {
-	display: block;
+/* siderbar */
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	border-right: 1px solid white;
+	background-color: white;
+	height: 100%;
+	width: 20%;
+	min-width: 200px;
+	font-size: 20px;
+	overflow-y: scroll;
+	text-align: center;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 	width: 100%;
 }
 
+.sidebar li {
+ border-bottom: 1px solid rgba(255,0,0,0.1)
+}
 
+.sidebar a {
+	display: block;
+	padding: 20px 0px;
+	letter-spacing: 2px;
+}
+
+.sidebar i {
+	padding: 0;
+	margin: 0;
+	margin-left: -10px;
+	margin-right: 10px; 
+}
+
+.side-nav-footer {
+	font-size: 14px;
+	padding: 10px 10px;
+	text-align: center;
+}
+.side-nav-footer a {
+	display: inline;
+	padding: 5px 4px;
+}
 /* login form */
 
 .small-container {
-	max-width: 48px;
+	max-width: 480px;
 	margin: 0 auto;
 	border: 1px solid red;
+	padding: 20px;
+}
+
+.small-container .larger-icon {
+	text-align: center;
+}
+
+.small-container p {
+	text-align: center;
+	margin:10px 0;
+}
+.small-container i {
+	font-size: 100px;
 }
