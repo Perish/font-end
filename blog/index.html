@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
 </head>
 <body>
 	<header>
@@ -30,11 +31,12 @@
 		</nav>
 		<div id="header">
 			<div class="operator">
-				<a href="#" class="button-icon"><i class="fa fa-bars"></i></a>
+				<div class="button-icon"><i class="fa fa-bars"></i></div>
 			</div>
 			<div class="title">博客-小徐</div>
 		</div>
 	</header>
+	<div class="side-nav-mask"></div>
 	<section></section>
 	<section></section>
 	<section></section>
@@ -43,8 +45,13 @@
 	<script type="text/javascript">
 	$(function(){
 		$(".button-icon").on('click', function(){
-			$(".sidebar").fadeToggle("display");
-		})
+			$(".sidebar").removeClass("display animated fadeOutLeft").addClass("animated fadeInLeft");
+			$("body").addClass("side-nav-mask-active");
+		});
+		$(".side-nav-mask").on('click', function(){
+			$(".sidebar").removeClass("animated fadeInLeft").addClass("animated fadeOutLeft");
+			$("body").removeClass("side-nav-mask-active");
+		});
 	})
 	</script>
 </body>

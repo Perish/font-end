@@ -1,5 +1,6 @@
 body {
 	padding-top: 70px;
+	overflow: hidden;
 }
 /* header css */
 
@@ -25,15 +26,19 @@ body {
 	font-size: 24px;
 }
 
-a {
+a, .button-icon {
 	text-decoration: none important!;
 	color: maroon;
 	transition: all 0.5s;
 }
 
-a:hover {
+a:hover, .button-icon:hover {
 	color: rgba(128, 0, 0, 0.3);
 	text-decoration: none;
+}
+
+.button-icon {
+	cursor: pointer;
 }
 
 
@@ -56,7 +61,7 @@ a:hover {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 2;
+	z-index: 999;
 	border-right: 1px solid white;
 	background-color: white;
 	height: 100%;
@@ -99,6 +104,24 @@ a:hover {
 .side-nav-footer a {
 	display: inline;
 	padding: 5px 4px;
+}
+
+.side-nav-mask {
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.side-nav-mask-active .side-nav-mask {
+	visibility: visible;
+	opacity: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,0.3);
+	z-index: 900;
 }
 /* login form */
 
