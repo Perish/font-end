@@ -15,6 +15,7 @@ body {
 	left: 0;
 	width: 100%;
 	z-index: 1;
+	color: #9e9e9e;
 }
 
 #header .operator {
@@ -80,7 +81,7 @@ a:hover, .button-icon:hover {
 }
 
 .sidebar li {
- border-bottom: 1px solid rgba(255,0,0,0.1)
+ border-bottom: 1px solid rgba(211,211,211,0.1)
 }
 
 .sidebar a {
@@ -137,6 +138,7 @@ a:hover, .button-icon:hover {
 
 .small-container .larger-icon {
 	text-align: center;
+	color: #9e9e9e;
 }
 
 .small-container p {
