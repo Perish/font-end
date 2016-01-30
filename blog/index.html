@@ -40,16 +40,18 @@
 	<section></section>
 	<section></section>
 	<section></section>
-	<footer></footer>
+	<footer>
+		
+	</footer>
 
 	<script type="text/javascript">
 	$(function(){
 		$(".button-icon").on('click', function(){
-			$(".sidebar").removeClass("display animated fadeOutLeft").addClass("animated fadeInLeft");
 			$("body").addClass("side-nav-mask-active");
+			$(".sidebar").removeClass("display animated slideOutLeft").addClass("animated slideInLeft");
 		});
 		$(".side-nav-mask").on('click', function(){
-			$(".sidebar").removeClass("animated fadeInLeft").addClass("animated fadeOutLeft");
+			$(".sidebar").removeClass("animated slideInLeft").addClass("animated slideOutLeft");
 			$("body").removeClass("side-nav-mask-active");
 		});
 	})
