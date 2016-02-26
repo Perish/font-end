@@ -126,34 +126,56 @@ a:hover, .button-icon:hover, a:focus {
 }
 /* login form */
 
-.small-container {
-	max-width: 480px;
-	margin: 0 auto;
+.form-group label {
+  position: relative;
+  top: 30px;
+  color: #e0e0e0;
+  font-size: 14px;
+  transition: color .5s ease;
 }
 
-.small-container .panel {
-	padding: 15px;
-	box-shadow: 0 1px 10px rgba(0,0,0,0.1);
-	border-radius: 0;
+.form-group.focus label {
+  top: 10px;
+  color: #66afe9;
+  font-size: 14px;
 }
 
-.small-container .larger-icon {
-	text-align: center;
-	color: #9e9e9e;
+.form-control {
+   border-radius: 0;
+   border: none;
+   padding: 0;
+   border-bottom: 1px solid #e0e0e0;
+   transition: all .5s ease;
 }
 
-.small-container p {
-	text-align: center;
-	margin:10px 0;
-	color: #9e9e9e;
-}
-.small-container i {
-	font-size: 80px;
+.form-control:focus {
+  border-bottom: 1px solid #66afe9;
 }
 
-.qita {
-	text-align: center;
+.forget, .forget:hover, .forget:active, .forget:focus, .forget:visited  {
+   text-decoration: none;
+   color: #818a91;
+ }
+.max-box {
+   max-width: 880px;
+ }
+.max-box .card-block {
+   margin-top: 15px;
+   border:none;
+   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+   border-radius: 0;
+ }
+.max-box .card-block h6 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+.max-box .card-block p {
+     font-size: 0.5rem;
+  }
+html.turbolinks-progress-bar::before {
+    background-color: red !important;
+    height: 2px !important;
 }
-.qita span {
-	color: #9e9e9e;
+.email-notice {
+  margin-bottom: 0;
 }

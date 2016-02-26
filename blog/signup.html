@@ -40,39 +40,45 @@
 		</div>
 	</header>
 	<div class="side-nav-mask"></div>
-	<div class="container">
-		<div class="small-container">
-			<div class="panel">
-				<div class="panel-body">
-					<div class="larger-icon">
-						<i class="fa fa-user-plus"></i>
-					</div>
-					<p>欢迎加入我们!</p>
-					<form>
-					  <div class="form-group">
-					    <label for="exampleInputEmail1">用户名</label>
-					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="用户名">
-					  </div>
-					  <div class="form-group">
-					    <label for="exampleInputEmail1">邮箱</label>
-					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="邮箱">
-					  </div>
-					  <div class="form-group">
-					    <label for="exampleInputEmail1">手机号</label>
-					    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="手机号">
-					  </div>
-					  <div class="form-group">
-					    <label for="exampleInputPassword1">密码</label>
-					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="密码">
-					  </div>
-					  <button type="submit" class="btn btn-primary">注册</button>
-					</form>
-				</div>
-			</div>
-			<div class="qita">
-				<a href="login.html">登陆账户</a>
-			</div>
-		</div>
+	<div class="container max-box animated lightSpeedIn">
+	  <div class="row">
+	    <div class="col-md-6 col-md-offset-3">
+	      <div class="card card-block">
+	        <h6 class="card-title">
+	          快来加入我们吧！
+	        </h6>
+	        <form class="new_user" id="new_user" action="#" accept-charset="UTF-8"
+	        method="post">
+	          <fieldset class="form-group">
+	            <label for="username">
+	              用户名
+	            </label>
+	            <input class="form-control" id="username" type="text" name="user[username]">
+	          </fieldset>
+	          <fieldset class="form-group">
+	            <label for="email">
+	              邮箱
+	            </label>
+	            <input class="form-control" id="email" type="text" name="user[email]">
+	          </fieldset>
+	          <fieldset class="form-group">
+	            <label for="password">
+	              密码
+	            </label>
+	            <input class="form-control" id="password" type="password" name="user[password]">
+	          </fieldset>
+	          <button name="button" type="submit" class="btn btn-primary" data-disable-with="注册 <i class=&quot;fa fa-spinner&quot;></i>">
+	            注册
+	          </button>
+	        </form>
+	      </div>
+	    </div>
+	  </div>
+	  <p class="text-xs-center">
+	    <a href="login.html">
+	      已有账号
+	    </a>
+	  </p>
 	</div>
 	<footer></footer>
 
